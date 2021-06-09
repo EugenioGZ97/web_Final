@@ -1,0 +1,22 @@
+<%- include ("./partials/header") %>
+
+<main role="main" class="container">
+    <div class="row">
+      <div class="container">
+        <a href="/"><button type="submit" class="btn btn-primary"> Return Home </button></a>
+      </div>
+      <div class="col-md-8 blog-main">
+        <h2 class="blog-post-title">Live Stream from Planta <%=plant.name%> </h2>
+      </div>
+      <div class="col-md-8 m-auto pt-4">
+        <h3 class="text-center mb-5">Video Stream</h3>
+        <video width="100%" muted="muted" autoplay>
+          <source src="http://localhost:3000/video" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </main>
+
+
+
+<%- include ("./partials/footer") %>
